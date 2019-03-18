@@ -24,7 +24,7 @@ func main() {
 	fmt.Println(ally)
 	ally.firstName = "ally" //assign value to struct
 	ally.lastName = "olive"
-	fmt.Printf("%+v", alex) //%+v will give name and value of alex*/
+	fmt.Printf("%+v", alex) //%+v will give name of component and value of alex*/
 	jim := person{
 		firstName: "Jim",
 		lastName:  "Jimmy",
@@ -33,8 +33,8 @@ func main() {
 			zipCode: 94504,
 		}, // for multi-line struct need to have comma on at the end of it
 	}
-	jimPointer := &jim //&variable: & is operator which gives the memory address of the variable
-	jimPointer.updateName("Ji")
+	//jimPointer := &jim //&variable: & is operator which gives the memory address of the variable
+	jim.updateName("Ji")
 	jim.print()
 
 }
